@@ -35,7 +35,7 @@ class HeadsetButtonController:
             self.suppress -= 1
         max_ = np.max(indata)
 
-        if max_ > 0.8 and not self.is_held:
+        if max_ > 0.8:
             # The button was pressed!
             print('toggle_play')
             toggle_play()
